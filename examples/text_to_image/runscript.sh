@@ -21,6 +21,6 @@ accelerate launch --mixed_precision="fp16"  train_text_to_image_lora.py \
   --checkpointing_steps=500 \
   --caption_column="description" \
   --max_train_samples=1 \
-  --validation_epochs=100 \
+  --validation_epochs=5000 \
   --validation_prompt="University logo featuring a tree in red and white colors" \
   --seed=1337
