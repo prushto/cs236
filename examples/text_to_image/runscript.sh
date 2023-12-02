@@ -1,7 +1,7 @@
 export MODEL_NAME="runwayml/stable-diffusion-v1-5"
-export OUTPUT_DIR="logo-output-gpt_gen_desc_logos"
-export HUB_MODEL_ID="prushton/logo-lora-real-world"
-export DATASET_NAME="mdass/gpt_gen_desc_logos"
+export OUTPUT_DIR="logo-output-gpt_gen_desc_logos_v2"
+export HUB_MODEL_ID="prushton/logo-lora-real-world_v2"
+export DATASET_NAME="mdass/gpt_gen_desc_logos_v2"
 
 accelerate launch --mixed_precision="fp16"  train_text_to_image_lora.py \
   --pretrained_model_name_or_path=$MODEL_NAME \
