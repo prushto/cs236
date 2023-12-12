@@ -1,6 +1,6 @@
 export MODEL_NAME="runwayml/stable-diffusion-v1-5"
-export DATA_DIR="./data"
-export HUB_MODEL_ID="prushton/text-inv-myra"
+export DATA_DIR="./data_new"
+export HUB_MODEL_ID="prushton/text-inv-myra_fridec8"
 
 accelerate launch textual_inversion.py \
   --pretrained_model_name_or_path=$MODEL_NAME \
